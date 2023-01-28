@@ -2611,7 +2611,7 @@ eval("/* eslint-env browser */\nmodule.exports = typeof self == 'object' ? self.
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/lib/axios.js\");\n\nvar instance = axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].create({\n  baseURL: \"http://localhost:3000\"\n});\ninstance.interceptors.request.use(function (config) {\n  config.headers.Authorization = window.localStorage.getItem(\"token\");\n  return config;\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (instance);\n\n//# sourceURL=webpack://mern-stack-build-template/./client/src/axios.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/lib/axios.js\");\n\nvar instance = axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].create({\n  baseURL: \"http://longcrypt.site/\"\n});\ninstance.interceptors.request.use(function (config) {\n  config.headers.Authorization = window.localStorage.getItem(\"token\");\n  return config;\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (instance);\n\n//# sourceURL=webpack://mern-stack-build-template/./client/src/axios.js?");
 
 /***/ }),
 
